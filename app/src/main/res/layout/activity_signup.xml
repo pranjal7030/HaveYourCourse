@@ -1,0 +1,237 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/purple"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/signup_animation"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            android:id="@+id/waitanim"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/meditatinglady"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="KEEP CALM! we are working..."
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/signup_animation2"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            android:id="@+id/signupsucceful"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/successful"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Registration Successfull"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/signuplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/usersignupimageview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_account_circle_black"
+                    android:elevation="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Select Your Profile Picture"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/signupemail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_email_24"
+                android:elevation="10dp"
+                android:hint="Enter email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/signuppass"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                android:elevation="10dp"
+                android:hint="Create password"
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+            <EditText
+                android:id="@+id/signuppassconfirm"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                android:elevation="10dp"
+                android:hint="Confirm password"
+                android:inputType="textVisiblePassword"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/signupname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_person_24"
+                android:elevation="10dp"
+                android:hint="Enter name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/signupmobile"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_contact_phone_24"
+                android:elevation="10dp"
+                android:hint="Enter mobile no."
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/signupaddress"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_my_location_24"
+                android:elevation="10dp"
+                android:hint="Enter city"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/signupgender"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custominput2"
+                android:drawableRight="@drawable/ic_baseline_my_location_24"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="Enter state"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#000" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custominput2"
+                android:text="Signup"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/purple"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:id="@+id/loginanim"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/login"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/credholdinlayout"
+        android:elevation="50dp"
+
+
+
+        >
+        <EditText android:id="@+id/Loginemail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custominput2"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+
+        android:ems="10"
+
+        android:hint="email"
+
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+
+        android:textColor="#000000"
+        android:textColorHint="#000"
+        />
+
+        <EditText
+            android:id="@+id/Loginpass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custominput2"
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:layout_marginTop="10dp"
+
+            android:elevation="10dp"
+
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+
+            android:textColor="#000000"
+            android:textColorHint="#000"
+            />
+        <TextView
+            android:id="@+id/textView2forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="#fff"
+            android:padding="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:elevation="20dp"
+                android:id="@+id/load"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="true"
+                    app:lottie_rawRes="@raw/waiting"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="Loging In..."/>
+            </LinearLayout>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/Loginbtn1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custominput2"
+            android:gravity="center"
+            android:text="LOGIN"
+
+            android:textColor="#000"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/purple"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/forsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="new user! Dont have an account?"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@color/purple"
+            android:id="@+id/floatbtnlayout"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Logginsignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:elevation="10dp"
+                android:backgroundTint="#fff"
+                android:src="@drawable/ic_baseline_login_24"
+
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:elevation="10dp"
+                android:id="@+id/sign_in_button"
+                android:backgroundTint="#fff"
+                android:src="@drawable/googleg_standard_color_18"
+
+                />
+
+
+        </LinearLayout>
+</LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+

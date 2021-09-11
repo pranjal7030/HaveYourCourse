@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:elevation="10dp"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/coursetitle"
+            android:layout_width="wrap_content"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Index"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chat"
+                android:backgroundTint="#fff"
+                app:borderWidth="2dp"
+                app:backgroundTint="@color/colorAccent"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_chat_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Chat with mentor"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+           android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/livemeet"
+                android:backgroundTint="#fff"
+                app:borderWidth="2dp"
+                app:backgroundTint="@color/colorAccent"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_meeting_room_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Live Meet"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:id="@+id/indexvideos"
+            android:orientation="vertical"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBarVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,461 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/payenroll_animation"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            android:id="@+id/waitanim"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/developerworking"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Managing resources..."
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/payenroll_animation_confirm"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_height="400dp"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/confirmation"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Paid and Comfirmed User"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="15dp"
+            android:id="@+id/pecardviewcourse"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/cardview_dark_background"
+    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/payenrollcourseimage"
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+</androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coursetitle"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:id="@+id/pecoursetile"
+                            android:padding="5dp"
+                            android:textSize="40dp"
+                            android:textColor="#fff"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="about course"
+                            android:id="@+id/peaboutcourse"
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹:"
+                                android:id="@+id/price1"
+                                android:textColor="#fff"
+                                android:layout_gravity="center"
+                                android:textSize="20dp"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹"
+                                android:layout_gravity="center"
+                                android:textSize="20dp"
+                                android:id="@+id/pecourseprice"
+                                android:textColor="#fff"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="courseinclude"
+                    android:padding="10dp"
+                    android:id="@+id/pecourseincludes"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:id="@+id/pecourseupdatenotify"
+                        android:layout_gravity="center"
+                        android:text="you will get infomed here when the course get any updation"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Mentor"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="15dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/semiwhite"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/peteacherimage"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/ic_account_circle_black"
+                            app:civ_border_width="2dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="teachername"
+                                android:id="@+id/peteachername"
+                                android:textSize="20dp"
+                                android:textColor="#000"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="teacher email"
+                                android:id="@+id/peteacheremail"
+                                android:padding="5dp"
+                                android:textSize="15dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="aboutteacher"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/peaboutteacher"
+                            android:textSize="15dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Experience"
+                                android:padding="5dp"
+                                android:textSize="15dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="teacher experience"
+                                android:textColor="@color/black"
+                                android:id="@+id/peteacherexperience"
+                                android:padding="5dp"
+                                android:textSize="15dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/peteacherappeal"
+                            android:text="any information from the teacher will be shown here..."/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/reviewlayout"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reviewsrecyclepe"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:id="@+id/wishlistpe"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addtowishlistpe"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_playlist_add_24"
+                android:backgroundTint="#fff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save for Future"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/cardButton"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payenrollbutton"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:text="Pay and Enroll"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:visibility="gone"
+            android:text="Next"
+            android:textSize="20dp"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:id="@+id/cart"
+                android:orientation="vertical"
+               >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addtowishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                    android:backgroundTint="#fff"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add to cart"
+                    android:textColor="#000"/>
+            </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
